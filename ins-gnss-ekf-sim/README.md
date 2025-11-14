@@ -9,22 +9,27 @@ This project demonstrates:
 - GNSS fusion
 - Performance evaluation and visualization
 
-## System Architecture
+
 System Architecture
+
   IMU Simulator
+  
     - Accel/Gyro generation
     - Bias, random walk, bias instability
     - Scale factor error modeling
 
   GNSS Measurement Model
+  
     - Low-rate position/velocity (1 Hz)
     - Optional outlier injection
 
   Error-State INS
+  
     - 15-state / 18-state formulation
     - Quaternion propagation
 
   Kalman Filter (ESKF)
+  
     - Error propagation
     - GNSS update
     - State correction
