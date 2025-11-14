@@ -10,18 +10,24 @@ This project demonstrates:
 - Performance evaluation and visualization
 
 ## System Architecture
-- IMU Simulator
--- Generates accel/gyro with bias, random walk, bias instability, scale factor error
-- GNSS Measurement Model
--- Position/velocity updates at low rate (e.g., 1 Hz)
--- Optional outlier injection
-- Error-State INS
--- 15-state or 18-state formulation
--- Quaternion attitude propagation
-- Kalman Filter
--- Error propagation
--- GNSS update
--- State correction
+System Architecture
+  IMU Simulator
+    - Accel/Gyro generation
+    - Bias, random walk, bias instability
+    - Scale factor error modeling
+
+  GNSS Measurement Model
+    - Low-rate position/velocity (1 Hz)
+    - Optional outlier injection
+
+  Error-State INS
+    - 15-state / 18-state formulation
+    - Quaternion propagation
+
+  Kalman Filter (ESKF)
+    - Error propagation
+    - GNSS update
+    - State correction
 
 ## Features
 - IMU truth trajectory generation
