@@ -13,7 +13,6 @@ This project demonstrates:
 System Architecture
 
   IMU Simulator
-  
     - Accel/Gyro generation
     - Bias, random walk, bias instability
     - Scale factor error modeling
