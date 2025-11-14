@@ -36,3 +36,15 @@ This project demonstrates:
 - Velocity RMSE
 - Bias estimation curves
 - Trajectory comparison
+
+## folder structure
+
+/ins-gnss-ekf-sim
+│── src/
+│   ├── imu_sim.py
+│   ├── ins.py
+│   ├── ekf.py
+│   ├── gnss.py
+│── results/
+│── plots/
+│── README.md
