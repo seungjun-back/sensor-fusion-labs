@@ -24,6 +24,11 @@ This project demonstrates:
   - GNSS update  
   - State correction
 
+## Key Technical Highlights
+- Robustness: Integrated Chi-square tests within the innovation check phase for effective measurement outlier rejection.
+- Reliability: Implemented Time Alignment Buffers to handle and synchronize asynchronous sensor data streams from IMU and GNSS.
+- Adaptability: Optimized filter performance using Context-aware Adaptive R-scaling based on real-time GNSS signal quality.
+
 ## Features
 - IMU truth trajectory generation  
 - INS propagation  
