@@ -9,6 +9,8 @@ This project demonstrates:
 - Performance evaluation and visualization  
 
 ## System Architecture
+<img width="469" height="911" alt="Portfolio_Nav_Arch" src="https://github.com/user-attachments/assets/1da9b950-88e9-47aa-a313-e2a5d979922b" />
+
 - **IMU Simulator**
   - Generates accel/gyro with bias, random walk, bias instability, scale factor error
 - **GNSS Measurement Model**
