@@ -68,17 +68,23 @@ $$\delta \mathbf{x} = [\delta \mathbf{p}^T, \delta \mathbf{v}^T, \delta \boldsym
 
 ### 2. Covariance Propagation (Discrete-time)
 The uncertainty is propagated through the system dynamics:
+
 $$\mathbf{P}_{k|k-1} = \boldsymbol{\Phi}_{k-1} \mathbf{P}_{k-1|k-1} \boldsymbol{\Phi}_{k-1}^T + \mathbf{Q}_d$$
+
 where $\boldsymbol{\Phi}$ is the state transition matrix derived from the IMU mechanization.
 
 ### 3. Measurement Update (GNSS Fusion)
 When a GNSS measurement $\mathbf{y}_k$ is available, the Kalman gain $\mathbf{K}_k$ and error-state $\delta \hat{\mathbf{x}}_k$ are computed:
+
 $$\mathbf{K}_k = \mathbf{P}_{k|k-1} \mathbf{H}_k^T (\mathbf{H}_k \mathbf{P}_{k|k-1} \mathbf{H}_k^T + \mathbf{R}_k)^{-1}$$
+
 $$\delta \hat{\mathbf{x}}_k = \mathbf{K}_k (\mathbf{y}_k - \mathbf{H}_k \hat{\delta \mathbf{x}}_{k|k-1})$$
 
 ### 4. State Injection & Reset
 The estimated errors are injected back into the nominal state:
+
 $$\mathbf{x}_{true} = \mathbf{x}_{nominal} \oplus \delta \hat{\mathbf{x}}$$
+
 After injection, the error state is reset: $\delta \hat{\mathbf{x}} \leftarrow 0$.
 
 ## How to Run
