@@ -45,7 +45,7 @@ This project demonstrates:
 
 ## folder structure
 
-'''text
+```text
 ins-gnss-ekf-sim/
 ├── src/
 │   ├── imu_sim.py
@@ -55,7 +55,7 @@ ins-gnss-ekf-sim/
 ├── results/
 ├── plots/
 └── README.md
-'''
+```
 
 ## Key Equations
 (Include your discretized F, G, Q, update equations)
