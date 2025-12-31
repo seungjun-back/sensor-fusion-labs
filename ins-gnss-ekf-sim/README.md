@@ -45,15 +45,16 @@ This project demonstrates:
 
 ## folder structure
 
+```text
 ins-gnss-ekf-sim/
-    src/
-        imu_sim.py
-        ins.py
-        ekf.py
-        gnss.py
-    results/
-    plots/
-    README.md
+├── src/
+│   ├── imu_sim.py
+│   ├── ins.py
+│   ├── ekf.py
+│   └── gnss.py
+├── results/
+├── plots/
+└── README.md
 
 
 ## Key Equations
