@@ -22,6 +22,20 @@ It shows:
 - **Bias Instability**  
 - **Quantization Noise**
 
+- ## folder structure
+```text
+├── data/               # imu data (CSV/Numpy)
+├── src/
+│   ├── data_loader.py  # [Step 1] loading data
+│   ├── allan_calc.py   # [Step 2] Allan Variance 
+│   ├── param_id.py     # [Step 3] extract the parameters (Log-fitting)
+│   ├── noise_model.py  # [Step 4] Random Walk modelling
+│   └── compensator.py  # [Step 5] Bias removal
+├── notebook/
+│   └── final_report.ipynb 
+└── README.md           
+```
+
 ## Results
 (*Add your Allan plots here*)
 - Allan deviation curve with slopes  
